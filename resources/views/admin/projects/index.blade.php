@@ -9,11 +9,7 @@
     <div class="p-5">
         @include('partials.message')
         <div class="table-responsive">
-            <table class="table table-striped
-    table-hover	
-    table-borderless
-    table-light
-    align-middle">
+            <table class="table table-striped table-hover table-borderless table-light align-middle">
                 <thead class="table-dark">
 
                     <tr>
@@ -61,5 +57,6 @@
                 </tfoot>
             </table>
         </div>
+        {{ $projects->links('vendor.pagination.bootstrap-5') }}
     </div>
 @endsection
