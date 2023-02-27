@@ -8,6 +8,8 @@ use App\Models\Lead;
 use App\Mail\NewContact;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Google\Client;
+use Google\Service\Gmail;
 
 class LeadController extends Controller
 {
