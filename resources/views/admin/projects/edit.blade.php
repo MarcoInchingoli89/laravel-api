@@ -68,6 +68,20 @@
                 aria-describedby="helpId" value="{{ old('description', $project->description) }}">
             <small id="helpId" class="text-muted">Insert project description</small>
         </div>
+        <div class="mb-3">
+            <label for="project_url" class="form-label">Project URL</label>
+            <input type="text" name="project_url" id="project_url"
+                class="form-control @error('project_url') is-invalid @enderror" placeholder="Insert text"
+                aria-describedby="helpId" value="{{ old('project_url', $project->project_url) }}">
+            <small id="helpId" class="text-muted">Insert project URL</small>
+        </div>
+        <div class="mb-3">
+            <label for="source_code" class="form-label">Source Code</label>
+            <input type="text" name="source_code" id="source_code"
+                class="form-control @error('source_code') is-invalid @enderror" placeholder="Insert text"
+                aria-describedby="helpId" value="{{ old('source_code', $project->source_code) }}">
+            <small id="helpId" class="text-muted">Insert project source code</small>
+        </div>
 
         <button type="submit" class="btn btn-dark">Update Project</button>
     </form>

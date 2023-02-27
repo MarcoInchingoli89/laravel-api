@@ -18,6 +18,8 @@
                         <th>Cover Image</th>
                         <th>Type</th>
                         <th>Description</th>
+                        <th>Project URL</th>
+                        <th>Source Code</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -30,6 +32,8 @@
                                     alt=""></td>
                             <td>{{ $project->type ? $project->type->name : 'Uncategorized' }}</td>
                             <td>{{ $project->description }}</td>
+                            <td>{{ $project->project_url }}</td>
+                            <td>{{ $project->source_code }}</td>
                             <td>
                                 <a class="d-flex text-white p-2 my-2 bg-primary justify-content-center rounded-2"
                                     href="{{ route('admin.projects.show', $project->id) }}"><i
